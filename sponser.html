@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+    <style>
+    header{
+        background-image: url(iamges/City2.png);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: top;
+        height: 300px;
+        color: white;
+    }
+    body{
+        margin: 0;
+    }
+    div.div1{
+        text-align:center; 
+        padding:0px; 
+        margin:0px; 
+        color: transparent;
+        transition-property: color;
+	    transition-duration: 2s;
+	    transition-timing-function: linear;
+    }
+    a.bar{
+        color: white;
+        font-size: 20px;
+        margin: 5px;
+        text-decoration: none;
+    }
+    button.inf{
+        padding: 0px 10px;
+        border: none;
+        color: black;
+        text-align: center;
+        font-size: 10px;
+        background-color: transparent;
+        right: 0;
+    }
+    button.inf:hover {
+        background-color: #4CAF50; /* Green */
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="bar" style="height:70px; width:100%">
+            <div style="display:inline-block;">
+                <h1 id="top", style=" visibility: hidden; font-size: 40px; text-shadow: 0.1em 0.1em 0.2em black; margin-top: 0; font-family:Baskerville Old Face; padding: 10px; left:10px">CitySimulator V4</h1>
+            </div>
+            <div style="display:inline-block; padding:20px; position: fixed; right: 0;">
+                <nav>
+                    <a href="" class="bar">主頁</a>
+                    <a href="" class="bar">伺服器規則</a>
+                    <a href="" class="bar">指令一覽</a>
+                    <a href="sponser.html" class="bar">贊助我們</a>
+                </nav>
+            </div>
+        </div>
+        <div id="welcome" class="div1">
+            <h1 class="fadenum">
+                <br>贊助我們</br>
+            </h1>
+            <h4 class="fadenum", style="font-size:14px;">維持伺服器運作需要不少成本，如果你希望我們能夠升級配置或是提供更好的服務，請立即以行動支持我們！</h4>
+        </div>
+    </header>
+    <div style="height:300px; margin:0; padding:30px; background-color:gray; position:relative;">
+        <h1 style="color:white; margin:0; padding:0; text-align: center; width: 100%;">贊助福利</h1>
+        <table border="1" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);text-align:center;">
+            <tr>
+                <td style="width:150px">/</td>
+                <td style="width:90px">20 HKD</td>
+                <td style="width:90px">50 HKD</td>
+                <td style="width:90px">100 HKD</td>
+                <td style="width:90px">200 HKD</td>
+            </tr>
+            <tr>
+                <td>感謝信<button class="inf">ⓘ</button></td>
+                <td>1份</td>
+                <td>1份</td>
+                <td>1份</td>
+                <td>1份</td>
+            </tr>
+            <tr>
+                <td>自定義稱號<button class="inf">ⓘ</button></td>
+                <td>7天</td>
+                <td>30天</td>
+                <td>60天</td>
+                <td>120天</td>
+            </tr>
+            <tr>
+                <td>查詢死亡坐標<button class="inf">ⓘ</button></td>
+                <td>✘</td>
+                <td>✘</td>
+                <td>30天</td>
+                <td>60天</td>
+            </tr>
+            <tr>
+                <td>可上載歌曲容量<button class="inf">ⓘ</button></td>
+                <td>15 mb</td>
+                <td>15 mb</td>
+                <td>25 mb</td>
+                <td>35 mb</td>
+            </tr>
+            <tr>
+                <td><button class="inf">ⓘ</button></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <script>
+        document.getElementById("welcome").style.color = "white";
+        window.addEventListener('scroll',(event) => {
+            document.getElementById("top").style.visibility = "visible";
+            document.getElementById("bar").style.position = "fixed";
+            document.getElementById("welcome").style.padding = "70px";
+            document.getElementById('bar').style.backgroundImage = 'linear-gradient(to bottom, rgba(44,44,44,1) 70%, rgba(44,44,44,0.5) 85%, rgba(44,44,44,0) 100%)';
+        });
+    </script>
+</body>

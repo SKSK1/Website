@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+   <meta charset="UTF-8">
+   <style>
+    header{
+            background-image: url(iamges/City2.png);
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: top;
+            height: 300px;
+            color: white;
+    }
+    body{
+        margin: 0;
+    }
+    a.bar{
+        color: white;
+        font-size: 20px;
+        margin: 5px;
+        text-decoration: none;
+    }
+    h1.fadenum{
+        color: transparent;
+        transition-property: color;
+	    transition-duration: 2s;
+	    transition-timing-function: linear;
+    }
+    .introdution{
+        text-align:center; 
+        margin:auto; 
+        color:rgb(0, 255, 174); 
+        font-weight: 900; 
+        text-shadow: 0 0 0.5em white;
+        font-size: 30px;
+    }
+    .adv{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center center;
+    }
+   </style>
+   
+</head>
+<body>
+    <header>
+        <div id="bar" style="height:70px; width:100%">
+            <div style="display:inline-block;">
+                <h1 id="top", style=" visibility: hidden; font-size: 40px; text-shadow: 0.1em 0.1em 0.2em black; margin-top: 0; font-family:Baskerville Old Face; padding: 10px; left:10px">CitySimulator V4</h1>
+            </div>
+            <div style="display:inline-block; padding:20px; position: fixed; right: 0;">
+                <nav>
+                    <a href="" class="bar">主頁</a>
+                    <a href="" class="bar">伺服器規則</a>
+                    <a href="" class="bar">指令一覽</a>
+                    <a href="sponser.html" class="bar">贊助我們</a>
+                </nav>
+            </div>
+        </div>
+        <h1 class="fadenum", id="welcome", style="text-align:center; padding:0px; margin:0px; font-family:'Courier New';" >Welcome to 
+            <br>CitySimulator V4</br>
+        </h1>
+    </header>
+    <div class="adv" style="background-image: url(iamges/1781.png);">
+        <h2 class="introdution">不定時舉辦的活動，讓你體驗有趣的時光</h2>
+    </div>
+    <div class="adv" style="background-image: url(iamges/law.png);">
+        <h2 class="introdution">十分仔細的規章制度保障玩家權益</h2>
+    </div>
+    <div class="adv" style="background-image: url(iamges/code.png);">
+        <h2 class="introdution">黑名單、行爲日志等保安插件令犯罪難以隱藏</h2>
+    </div>
+    <div class="adv" style="background-image: url(iamges/backup.jpg);">
+        <h2 class="introdution">地圖檔每天備份四次，安全Level Up</h2>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
